@@ -1,0 +1,105 @@
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: calc(var(--navbar-height) + 125px);
+  
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.text {
+  font: var(--display-font);
+  font-size: clamp(34px, 5vw, 70px);
+}
+
+.wave {
+  margin-left: 0.5rem;
+  display: inline-block;
+  transform-origin: 85% 85%;
+}
+
+.descriptionText {
+  font: var(--display-font);
+  font-size: clamp(24px, 5vw, 70px);
+  color: var(--matcha);
+
+  display: block;
+  height: 100px;
+  width: 19.5ch;
+}
+
+.profileIcons {
+  margin-top: clamp(80px, 4vw, 150px);
+}
+
+.cartoon {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.loadingMessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: var(--body-font);
+  color: var(--matcha);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.loadingMessage::after {
+  content: "...";
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% { content: "."; }
+  33% { content: ".."; }
+  66% { content: "..."; }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: calc(var(--navbar-height-m) + 60px);
+  }
+
+  .introText {
+    gap: 10px;
+  }
+
+  .descriptionText {
+    font: 800 24px var(--font-hk);
+    height: 34px;
+  }
+
+  .profileIcons {
+    display: none;
+  }
+
+  .cartoon {
+    width: 300px;
+    height: 300px;
+  }
+}

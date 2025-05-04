@@ -1,0 +1,10 @@
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icons a img {
+  height: 40px;
+  width: auto;
+}

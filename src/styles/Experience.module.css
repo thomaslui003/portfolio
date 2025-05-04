@@ -1,0 +1,31 @@
+.experience {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 100px;
+}
+
+.title {
+  font: var(--h1-font);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media screen and (max-width: 1280px) {
+  .title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    text-align: center;
+    font: var(--h1-font-m);
+    font-size: 40px;
+  }
+}

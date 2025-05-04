@@ -1,0 +1,15 @@
+.credits {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.credits a {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .credits {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,33 @@
+.tag {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: #e0ece5;
+}
+
+.skill {
+  font: var(--body-alt-font);
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.logo {
+  height: 20px;
+  width: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .tag {
+    padding: 4px 12px;
+    border-radius: 7px;
+  }
+  .skill {
+    font-size: 12px;
+  }
+
+  .logo {
+    height: 10px;
+  }
+}

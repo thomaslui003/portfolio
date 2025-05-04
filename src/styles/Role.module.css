@@ -1,0 +1,68 @@
+.role {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--dirty-matcha);
+  border-radius: 50%;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.line {
+  width: 2px;
+  background-color: var(--dirty-matcha);
+  flex-grow: 1;
+  margin-bottom: 5px;
+}
+
+.roleInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  font: var(--h3-font);
+}
+
+.date {
+  font: var(--body-alt-font);
+  color: var(--dirty-matcha);
+}
+
+.description {
+  font: var(--body-font);
+  margin-left: 1em;
+  margin-bottom: 5px;
+}
+
+.description li {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font: var(--h3-font-m);
+  }
+
+  .date {
+    font: var(--body-alt-font-m);
+  }
+
+  .description {
+    font: var(--body-font-m);
+    margin-bottom: 0px;
+  }
+}

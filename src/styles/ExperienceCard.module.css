@@ -1,0 +1,25 @@
+.experienceCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.logo {
+  border-radius: 15%;
+}
+
+.company {
+  font: var(--h2-font);
+}
+
+@media screen and (max-width: 768px) {
+  .company {
+    font: var(--h2-font-m);
+  }
+}

@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST='{"../components/Intro.tsx -> ./VanillaThreeScene":{"id":2070,"files":["static/chunks/fb7d5399.d22ca5fdafbd2067.js","static/chunks/2d36dd80.fea881abc1308adc.js","static/chunks/836.67450c16337c04b4.js","static/chunks/70.d738e89b1a73ddf5.js"]}}';

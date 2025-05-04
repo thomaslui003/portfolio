@@ -1,0 +1,110 @@
+:root {
+  /* Desktop */
+  --display-font: 800 60px var(--font-hk);
+  --h1-font: 700 56px var(--font-hk);
+  --h1-alt-font: 700 40px var(--font-hk);
+  --h2-font: 700 30px var(--font-hk);
+  --h3-font: 700 20px var(--font-hk);
+  --body-font: 500 18px var(--font-hk);
+  --body-alt-font: 700 16px var(--font-hk);
+
+  /* Mobile */
+  --h1-font-m: 700 34px var(--font-hk);
+  --h2-font-m: 700 24px var(--font-hk);
+  --h3-font-m: 700 20px var(--font-hk);
+  --body-font-m: 500 16px var(--font-hk);
+  --body-alt-font-m: 700 16px var(--font-hk);
+  --secondary-body-font-m: 600 14px var(--font-hk);
+
+  /* Colors */
+  --oat-milk: #F6F6F6;/*E0E0E0 fdfcfb*/
+  --light-matcha-gradient: linear-gradient(to bottom, #FFFFFF, #FFFFFF); /* the project card used this  #6598bd, #f9f9f9*/
+  --foam: #e0ece5;
+  --dirty-matcha: #b08468; /* the date range bar colour*/
+  --matcha: #0f2276; /* changing text colour*/
+  --sesame: #2c2b33;
+
+  --navbar-height: 125px;
+  --navbar-height-m: 80px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  line-height: 1.6;
+  font: var(--body-font);
+  color: var(--sesame);
+  background-color: var(--oat-milk);
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px;
+  cursor: url("/cursor4.png"), auto;
+}
+
+body {
+  min-height: 100vh;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* prettier-ignore */
+body, h1, h2, h3, h4, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+.container {
+  width: 85%;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 75%;
+  }
+
+  html,
+  body {
+    scroll-padding-top: 80px;
+  }
+}
