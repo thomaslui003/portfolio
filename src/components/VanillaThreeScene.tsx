@@ -11,7 +11,8 @@ const VanillaThreeScene = () => {
   const targetRotationX = useRef(0); // Initial X rotation
 
   useEffect(() => {
-    if (!mountRef.current) return;
+    const container = mountRef.current;
+    if (!container) return;
 
     // Scene setup
     const scene = new THREE.Scene();
@@ -37,8 +38,7 @@ const VanillaThreeScene = () => {
     // Mouse move handler
     const handleMouseMove = (event: MouseEvent) => {
       // Calculate mouse position relative to container
-      const rect = mountRef.current?.getBoundingClientRect();
-      if (!rect) return;
+      const rect = container.getBoundingClientRect();
       
       // Convert mouse position to normalized coordinates (-1 to 1)
       mouseX.current = ((event.clientX - rect.left) / rect.width) * 2 - 1;
@@ -85,13 +85,12 @@ const VanillaThreeScene = () => {
     // Enable color space for better color accuracy
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     
-    const container = mountRef.current;
     const width = container.clientWidth;
     const height = container.clientHeight;
     renderer.setSize(width, height);
     camera.aspect = width / height;
     camera.updateProjectionMatrix();
-    mountRef.current.appendChild(renderer.domElement);
+    container.appendChild(renderer.domElement);
 
     // Enhanced lighting
     const ambientLight = new THREE.AmbientLight(0xffffff, 3.5);
@@ -200,10 +199,10 @@ const VanillaThreeScene = () => {
 
     // Handle container resize
     const handleResize = () => {
-      if (!mountRef.current) return;
+      if (!container) return;
       
-      const width = mountRef.current.clientWidth;
-      const height = mountRef.current.clientHeight;
+      const width = container.clientWidth;
+      const height = container.clientHeight;
       
       camera.aspect = width / height;
       camera.updateProjectionMatrix();
@@ -217,7 +216,7 @@ const VanillaThreeScene = () => {
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
       resizeObserver.disconnect();
-      mountRef.current?.removeChild(renderer.domElement);
+      container.removeChild(renderer.domElement);
       scene.clear();
     };
   }, []);

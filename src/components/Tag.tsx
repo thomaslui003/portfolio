@@ -10,7 +10,7 @@ import nextLogo from "../../public/images/next.png";
 import postgresqlLogo from "../../public/images/postgresql.png";
 import pythonLogo from "../../public/images/python.png";
 import d3Logo from "../../public/images/d3logo.png";
-import springLogo from "../../public/images/springbootLogo.png";
+import springLogo from "../../public/images/springBootLogo.png";
 import s3Logo from "../../public/images/s3logo.png";
 import javaLogo from "../../public/images/javaLogo1.png";
 import matlabLogo from "../../public/images/matlabLogo.png";
