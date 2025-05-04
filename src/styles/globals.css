@@ -42,7 +42,7 @@ body {
   background-color: var(--oat-milk);
   scroll-behavior: smooth;
   scroll-padding-top: 150px;
-  cursor: url("./cursor4.png"), auto;
+  cursor: url("/public/cursor4.png"), auto;
 }
 
 body {
