@@ -113,7 +113,7 @@ const VanillaThreeScene = () => {
     // Load GLTF model with enhanced settings
     const gltfLoader = new GLTFLoader();
     gltfLoader.load(
-      '/models/person.glb',
+      './models/person.glb',
       (gltf) => {
         console.log('Model loaded successfully:', gltf);
         
