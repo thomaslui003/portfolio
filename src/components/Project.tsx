@@ -19,7 +19,7 @@ export default function Project() {
           tags={["Python","Javascript", "D3.js"]}
           link="https://github.com/thomaslui003/Global-CO2-Emissions-DataVisualization"
           imageLink="https://thomaslui003.github.io/Global-CO2-Emissions-DataVisualization/"
-          image="/images/CO2Dash.png"
+          image="./images/CO2Dash.png"
           extra=""
         />
         <ProjectCard
@@ -36,7 +36,7 @@ export default function Project() {
           tags={["React", "SpringBoot", "PostgreSQL", "AWS S3"]}
           link="https://github.com/thomaslui003/SpringBoot-Webapp-with-S3-Image-Uploader/"
           imageLink="http://client-track-frontend.s3-website-us-west-1.amazonaws.com/dashboard"
-          image="/images/interfaceClientTrack.png"
+          image="./images/interfaceClientTrack.png"
           extra=""
         />
         <ProjectCard
@@ -51,7 +51,7 @@ export default function Project() {
           ]}
           tags={["Python"]}
           link="https://github.com/thomaslui003/Tic_Tac_Toe_Adversarial_Search_AI"
-          image="/images/TicTacToeInterface.png"
+          image="./images/TicTacToeInterface.png"
           extra=""
         />
         <ProjectCard
@@ -66,7 +66,7 @@ export default function Project() {
           ]}
           tags={["Java", "Javascript", "PostgreSQL"]}
           link="https://github.com/thomaslui003/Invasive-Species-Reporting-Tool/"
-          image="/images/invasiveAppInterface.jpg"
+          image="./images/invasiveAppInterface.jpg"
           extra=""
         />
         <ProjectCard
@@ -80,7 +80,7 @@ export default function Project() {
           ]}
           tags={["Matlab"]}
           link="https://github.com/thomaslui003/Harris-Corner-Detection-and-SIFT-like-Descriptor-Feature-Matching"
-          image="/images/featureMatchingProj.png"
+          image="./images/featureMatchingProj.png"
           extra=""
         />
         <ProjectCard
@@ -95,7 +95,7 @@ export default function Project() {
           ]}
           tags={["C#", "Unity", "Maya"]}
           link="https://0919azi.wixsite.com/iat445/final-project"
-          image="/images/pathOfWuxia.png"
+          image="./images/pathOfWuxia.png"
           extra="Unity Immersive Environment Game"
         />
       </div>
