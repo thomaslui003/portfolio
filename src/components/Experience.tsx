@@ -9,7 +9,7 @@ export default function Experience() {
         
         <ExperienceCard
           company="Natural Resouces Canada"
-          logo="/images/nrcan.jpeg"
+          logo="./images/nrcan.jpeg"
           roles={[
             {
               title: "Software Developer Intern",
